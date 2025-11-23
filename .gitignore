@@ -1,0 +1,43 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+.cache/
+.mypy_cache/
+.pytest_cache/
+.ropeproject/
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/
+node_modules/
+.dist/
+.build/
+coverage/
+htmlcov/
+
+# Data & models
+mvp/data/generated/
+mvp/models/checkpoints/
+# Virtualenvs
+.venv/
+.venv*/
+venv/
+venv*/
+venv312/
+.venv312/
+mvp/venv/
+**/venv/
+**/.venv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store

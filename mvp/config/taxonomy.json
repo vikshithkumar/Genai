@@ -1,0 +1,81 @@
+{
+  "model": "all-MiniLM-L6-v2",
+  "low_confidence_threshold": 0.5,
+  "categories": [
+    {
+      "id": "GROCERIES",
+      "name": "Groceries",
+      "aliases": ["grocery", "supermarket", "aldi", "kroger", "zepto", "blinkit", "bigbasket", "instamart"]
+    },
+    {
+      "id": "RESTAURANTS",
+      "name": "Restaurants & Cafes",
+      "aliases": ["starbucks", "mcdonald", "restaurant", "cafe", "swiggy", "zomato", "food delivery"]
+    },
+    {
+      "id": "TRANSPORT",
+      "name": "Transport",
+      "aliases": ["uber", "ola", "taxi", "fuel", "shell", "petrol", "rapido"]
+    },
+    {
+      "id": "SHOPPING",
+      "name": "Shopping",
+      "aliases": ["amazon", "flipkart", "myntra", "shopping", "ecommerce", "online shopping"]
+    },
+    {
+      "id": "UTILITIES",
+      "name": "Utilities",
+      "aliases": ["electricity", "water", "gas", "utility", "bescom", "mseb"]
+    },
+    {
+      "id": "ENTERTAINMENT",
+      "name": "Entertainment",
+      "aliases": ["netflix", "spotify", "movie", "concert", "prime video", "hotstar"]
+    },
+    {
+      "id": "TRAVEL",
+      "name": "Travel",
+      "aliases": ["indigo", "air", "flight", "train", "reservation", "makemytrip"]
+    },
+    {
+      "id": "INVESTMENT",
+      "name": "Investment & Trading",
+      "aliases": ["zerodha", "upstox", "groww", "angelone", "investment", "trading", "stock", "mutual fund", "sip", "demat", "equity"]
+    },
+    {
+      "id": "RENT",
+      "name": "Rent",
+      "aliases": ["rent", "nobroker", "nestaway", "landlord"]
+    },
+    {
+      "id": "INCOME",
+      "name": "Income",
+      "aliases": ["salary", "payroll", "paycheck", "income"]
+    },
+    {
+      "id": "BANKING",
+      "name": "Banking",
+      "aliases": ["hdfc", "icici", "sbi", "axis", "bank", "atm"]
+    },
+    {
+      "id": "HEALTH",
+      "name": "Health",
+      "aliases": ["apollo", "fortis", "pharmacy", "doctor", "hospital"]
+    },
+    {
+      "id": "SUBSCRIPTIONS",
+      "name": "Subscriptions",
+      "aliases": ["youtube premium", "canva", "aws", "subscription"]
+    },
+    {
+      "id": "EDUCATION",
+      "name": "Education",
+      "aliases": ["byju", "unacademy", "coursera", "udemy", "school", "college"]
+    },
+    {
+      "id": "FUEL",
+      "name": "Fuel",
+      "aliases": ["indian oil", "bharat petroleum", "hpcl", "fuel", "petrol", "diesel"]
+    }
+  ]
+}

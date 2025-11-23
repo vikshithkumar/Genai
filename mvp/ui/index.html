@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Transaction Categorizer — Prototype</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="top-left">
+      <h1 class="brand">AI Transaction Categorizer</h1>
+      <div class="subtitle">GHCI 2025 • Prototype</div>
+    </div>
+
+    <div class="top-right">
+      <div class="model-badge" id="model-badge">Model: —</div>
+
+      <div class="theme-toggle" id="theme-toggle" role="button" title="Toggle theme">
+        <div class="icons">
+          <span class="sun">☀️</span>
+          <span class="moon">🌙</span>
+        </div>
+        <div class="pill">
+          <div class="knob"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Single Transaction -->
+    <section class="card">
+      <h2>Single Transaction</h2>
+      <div class="muted">Type or paste a raw transaction string (e.g. AMZN Mktp IN 1234).</div>
+
+      <input id="input-transaction" class="input" placeholder="e.g. Amazon order 879" />
+
+      <div class="row" style="margin-top:0.6rem;">
+        <button id="btn-predict" class="btn primary">Predict (Ctrl+Enter)</button>
+        <button id="btn-rebuild-index" class="btn">Rebuild Index</button>
+      </div>
+
+      <div id="result-card" class="result-card hidden">
+        <div class="result-header">
+          <div class="predicted" id="predicted-label">—</div>
+          <div class="confidence" id="predicted-confidence">—</div>
+        </div>
+
+        <div id="neighbors-list" class="neighbors-list"></div>
+
+        <div class="rationale" id="rationale"></div>
+
+        <div id="feature-importance" class="feature-importance hidden">
+          <h3 style="margin-top: 1rem; margin-bottom: 0.5rem; font-size: 0.9rem;">Feature Importance</h3>
+          <div id="keyword-importance" class="keyword-importance"></div>
+          <div id="neighbor-importance" class="neighbor-importance"></div>
+        </div>
+
+        <details class="raw-json-details">
+          <summary>Raw JSON</summary>
+          <pre id="raw-json" class="raw-json"></pre>
+        </details>
+      </div>
+    </section>
+
+    <!-- CSV Batch -->
+    <section class="card">
+      <h2>CSV Batch Prediction</h2>
+      <div class="muted">Upload a CSV with a header column named <code>description</code> or <code>transaction</code>.</div>
+
+      <div class="file-row">
+        <input id="file-csv" type="file" accept=".csv" />
+        <button id="btn-predict-csv" class="btn primary">Predict CSV</button>
+        <button id="btn-clear-csv" class="btn">Clear</button>
+      </div>
+
+      <div id="csv-results" class="csv-results hidden"></div>
+    </section>
+
+    <!-- Correction -->
+    <section class="card" id="correction-section">
+      <h2>Correction</h2>
+      <div class="muted">Correct the last prediction (prefilled) or paste a transaction.</div>
+
+      <label for="correction-transaction">Transaction</label>
+      <input id="correction-transaction" class="input" placeholder="Transaction to correct" />
+
+      <label for="correction-input">Correct Category</label>
+      <select id="correction-input" class="input" style="padding: 0.5rem; width: 100%;">
+        <option value="">-- Select Category --</option>
+      </select>
+
+      <div class="row" style="margin-top:0.6rem;">
+        <button id="btn-submit-correction" class="btn primary">Submit Correction</button>
+        <button id="btn-save-add" class="btn">Save & Add</button>
+        <div id="correction-status" class="muted small" style="margin-left:0.6rem;"></div>
+      </div>
+    </section>
+
+    <!-- Taxonomy Admin -->
+    <section class="card">
+      <h2>Taxonomy Admin</h2>
+      <div class="muted">Upload a new <code>taxonomy.json</code>. Then click Rebuild Index.</div>
+
+      <div class="file-row">
+        <input id="taxonomy-file" type="file" accept=".json" />
+        <button id="btn-upload-taxonomy" class="btn primary">Upload Taxonomy</button>
+      </div>
+    </section>
+
+    <!-- Status -->
+    <section class="card">
+      <h2>Status</h2>
+      <div class="row">
+        <div id="status-text" class="muted">Ready</div>
+        <div id="index-count" class="muted" style="margin-left:auto">Index: —</div>
+      </div>
+    </section>
+
+    <footer class="footer">Built for GHCI 2025 Hackathon • Prototype</footer>
+  </main>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>

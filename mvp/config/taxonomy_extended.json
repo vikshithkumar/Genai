@@ -1,0 +1,16 @@
+{
+    "model": "all-MiniLM-L6-v2",
+    "low_confidence_threshold": 0.45,
+    "categories": [
+      { "id": "GROCERIES", "name": "Groceries", "aliases": ["grocery", "supermarket", "aldi", "kroger", "walmart", "wholefoods", "safeway", "tesco"] },
+      { "id": "RESTAURANTS", "name": "Restaurants & Cafes", "aliases": ["starbucks", "mcdonald", "restaurant", "cafe", "diner", "burger king", "subway"] },
+      { "id": "SHOPPING", "name": "Shopping", "aliases": ["amazon", "flipkart", "myntra", "shopping", "order", "mercado", "ebay"] },
+      { "id": "TRANSPORT", "name": "Transport", "aliases": ["uber", "ola", "taxi", "flight", "ticket", "indigo", "rail", "train", "bus"] },
+      { "id": "ENTERTAINMENT", "name": "Entertainment", "aliases": ["netflix", "spotify", "movie", "cinema", "concert", "play", "show"] },
+      { "id": "UTILITIES", "name": "Utilities", "aliases": ["electricity", "water", "gas", "utility", "bill", "power"] },
+      { "id": "SUBSCRIPTIONS", "name": "Subscriptions", "aliases": ["subscription", "monthly", "membership", "netflix", "spotify"] },
+      { "id": "HEALTH", "name": "Healthcare", "aliases": ["pharmacy", "hospital", "clinic", "doctor", "health"] }
+    ]
+  }
+  
+  

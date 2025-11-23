@@ -1,0 +1,14 @@
+{
+  "walmart": "GROCERIES",
+  "aldi": "GROCERIES",
+  "tesco": "GROCERIES",
+  "mcdonalds": "RESTAURANTS",
+  "starbucks": "RESTAURANTS",
+  "uber": "TRANSPORT",
+  "lyft": "TRANSPORT",
+  "shell": "TRANSPORT",
+  "netflix": "ENTERTAINMENT",
+  "spotify": "ENTERTAINMENT",
+  "amazon": "SHOPPING",
+  "ebay": "SHOPPING"
+}

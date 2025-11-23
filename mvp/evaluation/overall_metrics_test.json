@@ -1,0 +1,10 @@
+{
+  "macro_f1": 1.0,
+  "micro_f1": 1.0,
+  "weighted_f1": 1.0,
+  "accuracy": 1.0,
+  "total_samples": 5000,
+  "inference_time_seconds": 196.62674736976624,
+  "throughput_samples_per_second": 25.428890356393147,
+  "avg_latency_ms": 39.325349473953246
+}

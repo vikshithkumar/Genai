@@ -1,0 +1,32 @@
+{
+    "model": "all-MiniLM-L6-v2",
+    "low_confidence_threshold": 0.5,
+    "categories": [
+      {
+        "id": "GROCERIES",
+        "name": "Groceries",
+        "aliases": ["grocery", "supermarket", "aldi", "kroger", "walmart", "wholefoods"]
+      },
+      {
+        "id": "RESTAURANTS",
+        "name": "Restaurants & Cafes",
+        "aliases": ["starbucks", "mcdonald", "restaurant", "cafe", "diner"]
+      },
+      {
+        "id": "SHOPPING",
+        "name": "Shopping",
+        "aliases": ["amazon", "flipkart", "myntra", "shopping", "order"]
+      },
+      {
+        "id": "TRANSPORT",
+        "name": "Transport",
+        "aliases": ["uber", "ola", "taxi", "flight", "ticket", "indigo"]
+      },
+      {
+        "id": "ENTERTAINMENT",
+        "name": "Entertainment",
+        "aliases": ["netflix", "spotify", "movie", "cinema", "concert"]
+      }
+    ]
+  }
+  

@@ -1,0 +1,12 @@
+{
+    "model": "all-MiniLM-L6-v2",
+    "low_confidence_threshold": 0.55,
+    "categories": [
+      { "id": "SHOPPING", "name": "Shopping & Retail", "aliases": ["shop", "store", "order", "online order", "amazon", "walmart"] },
+      { "id": "RETAIL_MARKETPLACE", "name": "Retail Marketplace", "aliases": ["marketplace", "market", "AMZN", "Amazon marketplace"] },
+      { "id": "ENTERTAINMENT", "name": "Entertainment", "aliases": ["movie", "netflix", "ticket", "show", "concert"] },
+      { "id": "RENT", "name": "Rent & Mortgage", "aliases": ["rent", "mortgage", "rentals"] },
+      { "id": "TRANSPORT", "name": "Transport", "aliases": ["train", "flight", "uber", "cab", "taxi", "bus", "indigo"] }
+    ]
+  }
+  
